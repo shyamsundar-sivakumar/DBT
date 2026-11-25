@@ -9,11 +9,15 @@ sources:
         config:
           freshness: null
       - name: customers
-        freshness: null
+        config:
+          freshness: null
 
   - name: stripe
     database: raw
     schema: stripe
     tables:
       - name: payment
+        config:
+          freshness: null
+
         
