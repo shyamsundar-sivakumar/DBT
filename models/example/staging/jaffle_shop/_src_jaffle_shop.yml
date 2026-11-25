@@ -6,10 +6,14 @@ sources:
     schema: jaffle_shop
     tables:
       - name: orders
+        config:
+          freshness: null
       - name: customers
+        freshness: null
 
   - name: stripe
     database: raw
     schema: stripe
     tables:
       - name: payment
+        
