@@ -1,0 +1,23 @@
+version: 2
+
+sources:
+  - name: jaffle_shop
+    database: raw
+    schema: jaffle_shop
+    tables:
+      - name: orders
+        config:
+          freshness: null
+      - name: customers
+        config:
+          freshness: null
+
+  - name: stripe
+    database: raw
+    schema: stripe
+    tables:
+      - name: payment
+        config:
+          freshness: null
+
+        
